@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pertuis Sauna – La chaleur du Nord, face à l'Atlantique</title>
+<meta name="description" content="Des saunas en bois au bord de l'eau à La Rochelle, ouverts toute l'année. Un rituel scandinave, au rythme des marées.">
+<meta property="og:title" content="Pertuis Sauna – La chaleur du Nord, face à l'Atlantique">
+<meta property="og:description" content="Des saunas en bois au bord de l'eau à La Rochelle, ouverts toute l'année.">
+<meta property="og:image" content="images/hero.webp">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='17' r='16' fill='%230E2433'/%3E%3Cpath d='M8 20 L17 11 L26 20 Z' fill='%23B4410F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{--ink:#0E2433;--ink2:#0A1822;--sea:#1D5C7A;--mist:#F2F5F4;--muted:#3E5260;--muted2:#4A5B66;--line:#D5DEDD;--accent:#B4410F;--ember:#F08A4B;--frost:#9CC3CF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--mist);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--sea)}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.02em;margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.eyebrow{margin:0 0 14px;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--sea)}
+.dark .eyebrow{color:var(--frost)}
+.h2{font-size:clamp(32px,4.2vw,58px);line-height:1.05}
+.lead{font-size:19px;color:var(--muted);margin:0}
+.section{padding:112px 0}
+.white{background:#fff}
+.dark{background:var(--ink);color:#E8EEF0}
+.dark h2,.dark h3{color:#fff}
+.split{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-end;margin-bottom:44px}
+.split>div{flex:1 1 520px;min-width:0}.split>p{flex:1 1 360px;min-width:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;text-decoration:none;border:none;font:600 16px Inter,sans-serif;cursor:pointer}
+.btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{filter:brightness(1.08)}
+.btn-ghost{border:2px solid #fff;color:#fff;background:transparent}
+.radius{border-radius:22px}
+.grid{display:grid;gap:24px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.note{font-size:13px;color:var(--muted2);margin:16px 0 0}
+/* hero */
+.hero{min-height:92vh;min-height:780px;display:flex;flex-direction:column;color:#fff;background:linear-gradient(180deg,rgba(10,24,34,.35) 0%,rgba(10,24,34,.1) 35%,rgba(10,24,34,.84) 100%),url(images/hero.webp) center 55%/cover}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;max-width:1240px;margin:0 auto;width:100%}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-size:15px;font-weight:500}
+.links a{color:#fff;text-decoration:none}.links a:hover{text-decoration:underline}
+.links .pill{background:#fff;color:var(--ink);padding:12px 20px;border-radius:999px;font-weight:600;text-decoration:none}
+.hero-body{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:72px}
+.hero h1{font-size:clamp(42px,6vw,84px);line-height:1.02;letter-spacing:-.025em;max-width:900px;margin:0 0 22px}
+.hero p.sub{font-size:20px;max-width:620px;color:#E6EDF0;margin:0 0 34px}
+.hero .kicker{color:#F6D7B8;margin:0 0 18px;font-size:14px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.tag{margin-left:auto;font-size:12px;color:#C9D6DB}
+/* values */
+.values{background:#fff;border-bottom:1px solid #DCE4E3}
+.values .grid{padding:36px 24px;gap:28px}
+.values b{display:block;font-family:'Space Grotesk',sans-serif;font-size:19px;margin-bottom:4px}
+.values span{font-size:15px;color:var(--muted2)}
+.step{border-top:2px solid var(--ink);padding-top:22px}
+.step b{display:block;font-family:'Space Grotesk',sans-serif;color:var(--accent);margin-bottom:10px}
+.step p{margin:0;color:var(--muted)}
+.card-dark{border:1px solid #2E4A5C;border-radius:22px;padding:30px}
+.card-dark h3{font-size:23px;margin-bottom:10px}.card-dark p{margin:0}
+.specs{list-style:none;margin:0;padding:0}
+.specs li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.specs li:last-child{border-bottom:1px solid var(--line)}
+.specs span{color:var(--muted2)}
+.row{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
+/* booking */
+.book{display:flex;flex-wrap:wrap;gap:28px;align-items:stretch}
+.panel{flex:999 1 560px;min-width:0;background:var(--mist);border-radius:26px;padding:30px;display:flex;flex-direction:column;gap:26px}
+.label{margin:0 0 10px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{min-height:48px;padding:0 20px;border-radius:999px;border:2px solid #B9C7CC;background:#fff;color:var(--ink);font:600 15px Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.day{min-height:64px;border-radius:14px;border:1px solid #CBD6D9;background:#fff;color:var(--ink);font-family:Inter,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.day small{font-size:13px;color:var(--muted2)}.day strong{font-size:20px}
+.day[aria-pressed=true]{border:2px solid var(--accent);background:#FFF6F1}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.slot{text-align:left;padding:14px;border-radius:14px;border:1px solid #CBD6D9;background:#fff;color:var(--ink);font-family:Inter,sans-serif;display:flex;flex-direction:column;gap:8px;cursor:pointer}
+.slot strong{font-size:20px}.slot small{font-size:13px;color:var(--muted)}
+.slot[aria-pressed=true]{border:2px solid var(--accent);background:#FFF6F1}
+.slot:disabled{border-style:dashed;background:#EEF2F2;color:#5F6F78;cursor:not-allowed}
+.slot:disabled strong{text-decoration:line-through}
+.badge{align-self:flex-start;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+.b-sea{background:#FBE3D6;color:#8A3209}.b-cold{background:#DDEBF0;color:#164A63}
+.summary{flex:1 1 340px;min-width:0;background:var(--ink);color:#E8EEF0;border-radius:26px;padding:32px;display:flex;flex-direction:column;gap:18px}
+.summary .t{font-family:'Space Grotesk',sans-serif;font-size:26px;line-height:1.2;color:#fff;margin:0}
+.kv{margin:0;padding:12px 0;border-bottom:1px solid #2E4A5C;display:flex;justify-content:space-between;gap:12px}
+.kv span{color:#9FB3BC}.kv b{color:#fff;text-align:right}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:14px;font-weight:600}
+.field input{height:52px;padding:0 16px;border:1px solid #9FB0B8;border-radius:12px;font-size:16px;font-family:Inter,sans-serif;background:#fff;color:var(--ink)}
+.season{border-radius:22px;padding:28px;background:#fff}
+.season small{display:block;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin-bottom:6px}
+.season h3{font-size:26px;margin-bottom:10px}.season p{margin:0;color:var(--muted)}
+.season.inv{background:var(--ink);color:#E8EEF0}.season.inv small{color:var(--ember)}.season.inv h3{color:#fff}.season.inv p{color:#E8EEF0}
+.commit p{margin:0;padding:20px 0;border-top:1px solid var(--line)}
+.commit p span{color:var(--muted)}
+.partner{background:#fff;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.partner h3{font-size:24px}.partner p{margin:0;color:var(--muted)}
+.partner .ask{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);color:var(--ink)}
+.partner .ask small{display:block;font-size:13px;color:var(--muted2)}
+.cta{padding:120px 0;color:#fff;background:linear-gradient(rgba(10,24,34,.72),rgba(10,24,34,.72)),url(images/hiver.webp) center/cover}
+.cta h2{font-size:clamp(40px,5vw,68px);line-height:1.02;margin-bottom:16px}
+.cta form{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.cta .field input{border:none}
+footer{background:var(--ink2);color:#9FB3BC;font-size:14px}
+footer .wrap{padding-top:40px;padding-bottom:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer a{color:#fff}
+@media (max-width:760px){
+ body{font-size:16px}
+ .section{padding:64px 0}
+ .links a:not(.pill){display:none}
+ .hero{min-height:720px;background-position:38% center}
+ .hero p.sub{font-size:17px}
+ .lead{font-size:17px}
+ .panel{padding:20px}.summary{padding:22px}
+ .days{gap:5px}.day{min-height:58px}.day small{font-size:11px}.day strong{font-size:17px}
+ .slots{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .chip{flex:1 1 140px}
+ .g2{grid-template-columns:1fr}
+ .tag{margin-left:0}
+ .cta{padding:72px 0}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="top">
+<nav class="nav" aria-label="Navigation principale">
+<a class="brand" href="#top"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#fff"/><path d="M8 20 L17 11 L26 20 Z" fill="#B4410F"/><path d="M6 25 Q11 22 17 25 T28 25" stroke="#0E2433" stroke-width="2" fill="none"/></svg>Pertuis Sauna</a>
+<div class="links">
+<a href="#rituel">Le rituel</a><a href="#unite">Le sauna</a><a href="#reserver">Réserver</a><a href="#engagements">Engagements</a><a href="#partenaires">Partenaires</a>
+<a class="pill" href="#reserver">Pré-réserver</a>
+</div>
+</nav>
+<div class="wrap hero-body">
+<p class="kicker">La Rochelle · Ouverture prévue en 2027</p>
+<h1>La chaleur du Nord, face à l'Atlantique.</h1>
+<p class="sub">Des saunas en bois posés au bord de l'eau, ouverts toute l'année. On se réchauffe, on plonge dans l'océan, on recommence. Un rituel scandinave, réinventé au rythme des marées rochelaises.</p>
+<div class="ctas">
+<a class="btn btn-accent" href="#reserver">Pré-réserver une séance</a>
+<a class="btn btn-ghost" href="#rituel">Découvrir le rituel</a>
+<span class="tag">Visuel d'intention</span>
+</div>
+</div>
+</section>
+
+<section class="values" aria-label="L'essentiel">
+<div class="wrap grid g4">
+<div><b>Toute l'année</b><span>Des matins d'hiver aux soirs d'été.</span></div>
+<div><b>Au rythme des marées</b><span>Bain d'océan à marée haute, bain d'eau de mer sinon.</span></div>
+<div><b>Seul ou entre amis</b><span>Séances partagées ou sauna privatisé.</span></div>
+<div><b>Léger et réversible</b><span>Sur roues, sans aucune construction.</span></div>
+</div>
+</section>
+
+<section class="section" id="rituel">
+<div class="wrap">
+<div class="split">
+<div><p class="eyebrow">Le rituel</p><h2 class="h2">Chaud. Froid. Silence. Et on recommence.</h2></div>
+<p class="lead">Venu des pays nordiques, le rituel tient en trois gestes. Il réveille le corps, apaise l'esprit, et rassemble.</p>
+</div>
+<div class="grid g3" style="gap:36px;margin-bottom:56px">
+<div class="step"><b>01 — Chauffer</b><p>Dix à quinze minutes dans la chaleur sèche du bois, entre 70 et 90 °C. On ralentit, on respire.</p></div>
+<div class="step"><b>02 — Plonger</b><p>Quelques pas jusqu'à l'océan, ou jusqu'au bain d'eau de mer quand la marée est basse. Le choc, puis l'élan.</p></div>
+<div class="step"><b>03 — Se poser</b><p>Face à l'horizon, dans un peignoir chaud. Le cœur s'apaise, les sens s'éveillent. Puis, on recommence.</p></div>
+</div>
+<div class="grid g2">
+<img class="radius" src="images/interieur.webp" alt="Deux personnes dans le sauna, face à la baie vitrée qui donne sur l'océan au crépuscule" style="aspect-ratio:16/10;object-fit:cover;width:100%" loading="lazy">
+<img class="radius" src="images/hiver.webp" alt="Un matin d'hiver, quatre baigneurs sortent du sauna et courent vers la mer" style="aspect-ratio:16/10;object-fit:cover;width:100%" loading="lazy">
+</div>
+</div>
+</section>
+
+<section class="section dark" aria-labelledby="nord">
+<div class="wrap">
+<p class="eyebrow">Héritage scandinave</p>
+<h2 class="h2" id="nord" style="max-width:980px;margin-bottom:28px">Dans le Nord, le sauna est un lieu de vie. Nous l'amenons au bord de l'Atlantique.</h2>
+<p style="font-size:19px;max-width:820px;color:#C9D6DB;margin:0 0 56px">En Finlande, en Norvège ou en Suède, le sauna se partage entre amis, en famille, entre collègues, été comme hiver. Sur les quais des villes nordiques, les saunas au bord de l'eau ont fait des fronts de mer des lieux vivants toute l'année. La culture finlandaise du sauna est inscrite au patrimoine culturel immatériel de l'UNESCO depuis 2020.</p>
+<div class="grid g3">
+<div class="card-dark"><h3>Convivialité</h3><p>Un lieu où l'on se parle, sans écran ni code vestimentaire.</p></div>
+<div class="card-dark"><h3>Bien-être</h3><p>La chaleur et le froid : deux gestes simples, accessibles à tous.</p></div>
+<div class="card-dark"><h3>Nature</h3><p>L'océan, le vent, la lumière : le décor fait partie de l'expérience.</p></div>
+</div>
+<p style="margin:48px 0 0;font-size:19px;color:#fff;max-width:820px">Les premiers saunas de bord de mer ouvrent en Bretagne et en Normandie. <strong style="color:var(--ember)">La Rochelle mérite le sien.</strong></p>
+</div>
+</section>
+
+<section class="section" id="unite">
+<div class="wrap row">
+<div style="flex:1.3 1 520px;min-width:0"><img class="radius" src="images/unite.webp" alt="Le sauna mobile sur sa remorque à double essieu, bardage bois foncé et grande baie vitrée, sur le front de mer" style="aspect-ratio:3/2;object-fit:cover;width:100%" loading="lazy"></div>
+<div style="flex:1 1 380px;min-width:0">
+<p class="eyebrow">Le sauna</p>
+<h2 class="h2" style="font-size:clamp(32px,3.8vw,50px);margin-bottom:18px">Sur roues, dessiné pour le littoral.</h2>
+<p style="color:var(--muted);margin:0 0 26px">Une cabine en bois, une grande baie vitrée ouverte sur la mer, un poêle qui crépite. Et des roues : il s'installe sans fondation et repart sans laisser de trace.</p>
+<ul class="specs">
+<li><span>Capacité</span><strong>6 à 8 personnes</strong></li>
+<li><span>Gabarit</span><strong>Environ 4,5 m, remorque double essieu</strong></li>
+<li><span>Chauffage</span><strong>Poêle à bois certifié ou électrique</strong></li>
+<li><span>Installation</span><strong>Sur béquilles, sans fondation</strong></li>
+</ul>
+<p class="note">Caractéristiques envisagées, à confirmer avec le constructeur.</p>
+</div>
+</div>
+</section>
+
+<section class="section white" id="reserver">
+<div class="wrap">
+<div class="split">
+<div><p class="eyebrow">Réservation</p><h2 class="h2">Votre séance en trente secondes.</h2></div>
+<p class="lead">Choisissez votre formule, votre jour, votre créneau. Pour chaque horaire, la marée vous dit si votre bain se fera dans l'océan ou dans le bac d'eau de mer.</p>
+</div>
+<div class="book">
+<div class="panel">
+<div><p class="label">1 · Formule</p>
+<div class="chips" role="group" aria-label="Formule">
+<button type="button" class="chip" data-format="partagee" aria-pressed="true">Séance partagée · 1 personne</button>
+<button type="button" class="chip" data-format="privee" aria-pressed="false">Sauna privatisé · jusqu'à 8</button>
+</div></div>
+<div><p class="label">2 · Jour</p><div class="days" id="days" role="group" aria-label="Jour"></div></div>
+<div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-bottom:10px"><p class="label" style="margin:0">3 · Créneau — Les Minimes</p><p style="margin:0;font-size:13px;color:var(--muted2)">Pleine mer : <span id="tide"></span></p></div>
+<div class="slots" id="slots"></div>
+</div>
+</div>
+<aside class="summary" aria-label="Récapitulatif" aria-live="polite" id="summary"></aside>
+</div>
+<p class="note" style="margin-top:18px">Aperçu de la future plateforme. Créneaux et marées illustratifs.</p>
+</div>
+</section>
+
+<section class="section" aria-labelledby="saisons">
+<div class="wrap">
+<div class="split">
+<div><p class="eyebrow">Toute l'année</p><h2 class="h2" id="saisons">Quatre saisons, quatre ambiances.</h2></div>
+<p class="lead">Pensé d'abord pour l'arrière-saison, le sauna fait vivre le front de mer quand la ville retrouve son calme.</p>
+</div>
+<div class="grid g4" style="gap:20px">
+<div class="season inv"><small>La saison reine</small><h3>Hiver</h3><p>Vapeur sur l'eau froide, lumière rasante, habitués du petit matin.</p></div>
+<div class="season"><small>Renouveau</small><h3>Printemps</h3><p>Les beaux week-ends, les ponts, les premiers bains de l'année.</p></div>
+<div class="season"><small>Lumière</small><h3>Été</h3><p>Levers de soleil, couchers flamboyants, soirées entre amis.</p></div>
+<div class="season"><small>Grandes marées</small><h3>Automne</h3><p>L'océan qui gronde au loin, la chaleur du bois tout près.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section white" id="engagements">
+<div class="wrap">
+<p class="eyebrow">Nos engagements</p>
+<h2 class="h2" style="max-width:900px;margin-bottom:40px">Léger, sûr, réversible. Respectueux du littoral.</h2>
+<figure style="margin:0 0 44px">
+<img class="radius" src="images/transport.webp" alt="Le sauna sur sa remorque, tracté par une petite camionnette le long d'une route côtière bordée de dunes" style="aspect-ratio:21/8;object-fit:cover;width:100%" loading="lazy">
+<figcaption style="margin-top:14px"><strong>Il arrive, il repart.</strong> <span style="color:var(--muted)">Le sauna se déplace par la route et ne laisse aucune trace sur le site.</span></figcaption>
+</figure>
+<div class="grid g2 commit" style="gap:0 48px">
+<p><strong>Aucune construction en dur.</strong> <span>Des unités sur roues, retirables en quelques heures.</span></p>
+<p><strong>Respect du domaine maritime.</strong> <span>Implantation hors d'atteinte des plus hautes mers, retrait préventif par tempête.</span></p>
+<p><strong>Aucun rejet en mer.</strong> <span>Eaux de douche collectées, sanitaires raccordés ou autonomes.</span></p>
+<p><strong>Accès public préservé.</strong> <span>Aucune plage privatisée, cheminements libres autour des unités.</span></p>
+<p style="border-bottom:1px solid var(--line)"><strong>Sécurité.</strong> <span>Un hôte présent à chaque séance, consignes claires, assurance adaptée.</span></p>
+<p style="border-bottom:1px solid var(--line)"><strong>Sobriété.</strong> <span>Chauffage sobre, en cohérence avec La Rochelle Territoire Zéro Carbone.</span></p>
+</div>
+</div>
+</section>
+
+<section class="section dark" aria-labelledby="village">
+<div class="wrap row">
+<div style="flex:1 1 380px;min-width:0">
+<p class="eyebrow">Demain</p>
+<h2 class="h2" id="village" style="font-size:clamp(32px,3.8vw,50px);margin-bottom:22px">Un lieu de vie sur le quai.</h2>
+<p style="font-size:18px;color:#C9D6DB;margin:0 0 16px">Plusieurs saunas autour d'un bain froid partagé : un rendez-vous pour les Rochelais, du lever du jour aux soirs d'hiver.</p>
+<p style="font-size:18px;color:#C9D6DB;margin:0">Nous commencerons par un site pilote, pour grandir au rythme du territoire et de ses habitants.</p>
+</div>
+<div style="flex:1.4 1 520px;min-width:0"><img class="radius" src="images/port.webp" alt="Trois saunas mobiles alignés sur le quai du port à l'heure bleue, un bain froid entre eux" style="aspect-ratio:16/9;object-fit:cover;width:100%" loading="lazy"></div>
+</div>
+</section>
+
+<section class="section" id="partenaires">
+<div class="wrap">
+<p class="eyebrow">Partenaires</p>
+<h2 class="h2" style="max-width:900px;margin-bottom:44px">Écrivons ce projet ensemble.</h2>
+<div class="grid g3">
+<div class="partner"><h3>Collectivités et port</h3><p>Une offre hors saison, sobre et réversible, qui anime le front de mer toute l'année et s'adresse d'abord aux habitants.</p><p class="ask"><small>Nous recherchons</small><strong>Un site pilote et une autorisation d'occupation temporaire.</strong></p></div>
+<div class="partner"><h3>Marques partenaires</h3><p>Associez votre nom à un sauna, sur place et sur la plateforme, et offrez l'expérience à vos équipes et à vos clients.</p><p class="ask"><small>Nous recherchons</small><strong>Des parrains pour nos premières unités.</strong></p></div>
+<div class="partner"><h3>Clubs, entreprises, hébergeurs</h3><p>Récupération sportive, moments d'équipe, une expérience singulière à proposer à vos hôtes.</p><p class="ask"><small>Nous proposons</small><strong>Abonnements, privatisations, offres dédiées.</strong></p></div>
+</div>
+</div>
+</section>
+
+<section class="cta" id="contact">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-end">
+<div style="flex:1 1 480px;min-width:0">
+<h2>Soyez du premier plongeon.</h2>
+<p style="margin:0;font-size:19px;color:#E6EDF0;max-width:560px">Inscrivez-vous pour être prévenu de l'ouverture et profiter des séances fondatrices.</p>
+</div>
+<form id="waitlist" style="flex:1 1 420px;min-width:0">
+<div class="field" style="flex:1 1 240px"><label for="cta-email">Adresse e-mail</label><input id="cta-email" type="email" placeholder="vous@exemple.fr" required style="border:none"></div>
+<button class="btn btn-accent" type="submit" style="min-height:52px">Rejoindre la liste</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div>
+<p style="margin:0 0 8px"><strong style="color:#fff;font-family:'Space Grotesk',sans-serif;font-size:18px">Pertuis Sauna</strong> <span>— nom de travail</span></p>
+<p style="margin:0">Alexandre Nordvik, porteur du projet<br>
+<a href="mailto:contact@petruisauna.fr">contact@petruisauna.fr</a></p>
+</div>
+<p style="margin:0;max-width:460px">Projet en cours d'étude, sous réserve des autorisations. Visuels d'intention générés par IA, non contractuels.</p>
+</div>
+</footer>
+
+<script>
+(function(){
+var MAIL='contact@petruisauna.fr';
+var names=['Lun.','Mar.','Mer.','Jeu.','Ven.','Sam.','Dim.'];
+var times=[7.5,9,10.5,12,13.5,15,16.5,18,19.5];
+var st={format:'partagee',day:2,slot:null,done:false};
+function fmt(t){var h=Math.floor(t),m=Math.round((t-h)*60);return h+' h '+(m<10?'0'+m:m);}
+function model(){
+ var hw=6.2+st.day*0.85,hws=[hw-12.42,hw,hw+12.42];
+ var slots=times.map(function(t,i){
+  var mer=hws.some(function(h){return Math.abs(t-h)<=1.75;}),full,avail;
+  if(st.format==='partagee'){var left=(i*5+st.day*3)%9;full=left===0;avail=full?'Complet':left+(left>1?' places restantes':' place restante');}
+  else{full=(i+st.day)%3===0;avail=full?'Déjà réservé':'Disponible';}
+  return {t:fmt(t),mer:mer,full:full,avail:avail};
+ });
+ var tides=[hw,hw+12.42].filter(function(h){return h<24;}).map(fmt).join(' · ');
+ return {slots:slots,tides:tides};
+}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function render(){
+ var m=model();
+ document.querySelectorAll('.chip').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.format===st.format);});
+ document.getElementById('days').innerHTML=names.map(function(n,i){
+  return '<button type="button" class="day" data-day="'+i+'" aria-pressed="'+(i===st.day)+'"><small>'+n+'</small><strong>'+(15+i)+'</strong></button>';
+ }).join('');
+ document.getElementById('tide').textContent=m.tides;
+ document.getElementById('slots').innerHTML=m.slots.map(function(s,i){
+  var badge=s.full?'':(s.mer?'<span class="badge b-sea">Bain d\'océan</span>':'<span class="badge b-cold">Bain froid</span>');
+  return '<button type="button" class="slot" data-slot="'+i+'" '+(s.full?'disabled ':'')+'aria-pressed="'+(st.slot===i)+'"><strong>'+s.t+'</strong>'+badge+'<small>'+s.avail+'</small></button>';
+ }).join('');
+ var cur=(st.slot!==null&&m.slots[st.slot]&&!m.slots[st.slot].full)?m.slots[st.slot]:null;
+ var day=names[st.day].replace('.','')+' '+(15+st.day);
+ var fmtLabel=st.format==='partagee'?'Séance partagée · 1 pers.':"Sauna privatisé · jusqu'à 8";
+ var bath=cur?(cur.mer?"Dans l'océan (marée haute)":"Bac d'eau de mer froide"):'';
+ var el=document.getElementById('summary'),h='<p class="label" style="color:#9CC3CF;margin:0">Votre pré-réservation</p>';
+ if(!cur){h+='<p class="t">Choisissez un créneau pour continuer.</p><p style="margin:0;color:#C9D6DB">Les créneaux « Bain d\'océan » se terminent par un plongeon dans la mer.</p>';}
+ else if(!st.done){
+  h+='<div><p class="kv"><span>Lieu</span><b>Les Minimes</b></p><p class="kv"><span>Date</span><b>'+day+'</b></p><p class="kv"><span>Heure</span><b>'+cur.t+' · 90 min</b></p><p class="kv"><span>Formule</span><b>'+fmtLabel+'</b></p><p class="kv" style="border:none"><span>Bain</span><b style="color:#F08A4B">'+bath+'</b></p></div>'+
+  '<form id="pre" style="display:flex;flex-direction:column;gap:14px"><div class="field"><label for="pre-email" style="color:#fff">E-mail de confirmation</label><input id="pre-email" type="email" required placeholder="vous@exemple.fr"></div>'+
+  '<button class="btn btn-accent" type="submit">Confirmer ma pré-réservation</button></form><p style="margin:0;font-size:13px;color:#9FB3BC">Gratuit et sans engagement. Vous serez prévenu dès l\'ouverture des réservations.</p>';
+ } else {
+  h+='<svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#F08A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><p class="t">C\'est noté. À très bientôt au bord de l\'eau.</p><p style="margin:0;color:#C9D6DB">'+day+' à '+cur.t+'. Votre messagerie s\'est ouverte pour nous envoyer votre demande.</p><button type="button" class="btn btn-ghost" id="again" style="align-self:flex-start;min-height:46px;border-width:1px">Choisir un autre créneau</button>';
+ }
+ el.innerHTML=h;
+ var pre=document.getElementById('pre');
+ if(pre)pre.addEventListener('submit',function(e){e.preventDefault();
+  var em=document.getElementById('pre-email').value;
+  var body='Bonjour,%0D%0A%0D%0AJe souhaite pré-réserver une séance :%0D%0A- Date : '+encodeURIComponent(day)+'%0D%0A- Heure : '+encodeURIComponent(cur.t)+'%0D%0A- Formule : '+encodeURIComponent(fmtLabel)+'%0D%0A- E-mail : '+encodeURIComponent(em)+'%0D%0A%0D%0AMerci !';
+  window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Pré-réservation Pertuis Sauna')+'&body='+body;
+  st.done=true;render();});
+ var again=document.getElementById('again');
+ if(again)again.addEventListener('click',function(){st.done=false;st.slot=null;render();});
+}
+document.querySelector('.chips').addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;st.format=b.dataset.format;st.slot=null;st.done=false;render();});
+document.getElementById('days').addEventListener('click',function(e){var b=e.target.closest('.day');if(!b)return;st.day=+b.dataset.day;st.slot=null;st.done=false;render();});
+document.getElementById('slots').addEventListener('click',function(e){var b=e.target.closest('.slot');if(!b||b.disabled)return;st.slot=+b.dataset.slot;st.done=false;render();});
+document.getElementById('waitlist').addEventListener('submit',function(e){e.preventDefault();
+ var em=document.getElementById('cta-email').value;
+ window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent("Liste d'attente Pertuis Sauna")+'&body='+encodeURIComponent('Bonjour, je souhaite être prévenu(e) de l\'ouverture. Mon e-mail : '+em);
+});
+render();
+})();
+</script>
+</body>
+</html>
